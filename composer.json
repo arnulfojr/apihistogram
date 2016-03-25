@@ -6,7 +6,7 @@
     "description": "ApiHistogram is a Symphony Bundle that allows you to create historical data from your web services",
     "minimum-stability": "dev",
     "version": "1.0",
-    "keywords": ["api", "history", "sql", "doctrine", "histogram", "HTTP", "save", "apihistogram"],
+    "keywords": ["api", "history", "response", "persist", "qcharts", "sql", "doctrine", "histogram", "HTTP", "save", "apihistogram"],
     "authors": [
         {
             "name": "Arnulfo Solis Ramirez",
