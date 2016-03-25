@@ -45,6 +45,29 @@ api_histogram:
             ...
 ```
 
+- Configuration fields:
+    + connection: Is the connection value of the database connection
+    given by doctrine.
+        - Required field.
+    + schema_name: The name of the schema to put all tables in.
+        - Required field.
+    + sites: Sites to fetch the data from.
+        - Required for logical reasons.
+        - site_id: This is the Id given to the registered site.
+            + name: Natural name (Title)
+                - Required field.
+            + url: URL used to call the data from.
+            + formatter: The desired ```Cleaner```'s namespace.
+                - This formatter has to implement the ```CleanerInterface```
+                - Required field.
+            + database: Database's configuration.
+                - table_name: The name of the table to save the response
+                data in.
+                    + Required field.
+                - create_table: (boolean) if the call will create the 
+                table if the table is not found.
+                    + If it is not found an exception will be thrown
+                    and processing the rest of the sites will continue.
 - Every time you run the command ```app/console api-histogram:update```
 all your registered sites will be updated.
     + Tip: use a cron job to update it automatically for you!

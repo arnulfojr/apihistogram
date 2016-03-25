@@ -2,7 +2,7 @@
     "name": "arnulfosolis/apihistogram",
     "license": "MIT",
     "type": "symfony-bundle",
-    "homepage": "https://github.com/arnulfojr/apihistogram",
+    "homepage": "https://github.com/arnulfojr/ApiHistogram-Standard",
     "description": "ApiHistogram is a Symphony Bundle that allows you to create historical data from your web services",
     "minimum-stability": "dev",
     "version": "1.0",
