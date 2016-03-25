@@ -12,7 +12,7 @@ ready to be used.
 - Next step we have to register ApiHistogram into the 
 target's ```AppKernel```.
     + ApiHistogram consists of only one Bundle, so only one bundle is
-    required to be loaded, ```ApiHistogramBundle\ApiHistogramBundle```.
+    required to be loaded, ```ApiHistogram\ApiHistogramBundle\ApiHistogramBundle```.
 - Once you have registered ApiHistogram's Bundle, you can go ahead and
  configure it.
     + Configuration for a site:
