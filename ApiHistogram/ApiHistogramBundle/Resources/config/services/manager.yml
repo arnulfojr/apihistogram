@@ -1,0 +1,6 @@
+services:
+    api_histogram.site_manager:
+        class: ApiHistogram\ApiHistogramBundle\Services\SiteManager\SiteManager
+        arguments:
+            - @api_histogram.configuration_loader
+            - @api_histogram.cleaner_loader

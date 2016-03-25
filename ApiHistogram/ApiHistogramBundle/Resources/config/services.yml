@@ -1,0 +1,13 @@
+# ApiHistogram Services!
+imports:
+    - { resource: 'services/fetcher.yml' }
+    - { resource: 'services/loader.yml' }
+    - { resource: 'services/manager.yml' }
+    - { resource: 'services/repository.yml' }
+    - { resource: 'services/updater.yml' }
+    - { resource: 'services/persist.yml' }
+
+services:
+#    api_histogram.example:
+#        class: ApiHistogramBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

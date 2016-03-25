@@ -1,0 +1,7 @@
+services:
+    api_histogram.site_capsule_fetcher:
+        class: ApiHistogram\ApiHistogramBundle\Services\Fetcher\SiteCapsule\SiteCapsuleFetcher
+    api_histogram.fetch_handler:
+        class: ApiHistogram\ApiHistogramBundle\Services\Fetcher\Response\Handler
+        arguments:
+            - @api_histogram.persist

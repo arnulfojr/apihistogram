@@ -1,0 +1,6 @@
+services:
+    api_histogram.updater:
+        class: ApiHistogram\ApiHistogramBundle\Services\Update\ApiUpdater
+        arguments:
+            - @api_histogram.site_capsule_fetcher
+            - @api_histogram.fetch_handler

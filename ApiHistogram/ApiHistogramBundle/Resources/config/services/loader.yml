@@ -1,0 +1,26 @@
+services:
+
+    api_histogram.configuration_builder:
+        class: ApiHistogram\ApiHistogramBundle\Services\Loader\Configuration\Builder\ConfigurationBuilder
+        arguments:
+            - "%api_histogram.config%"
+
+    api_histogram.configuration_loader:
+        class: ApiHistogram\ApiHistogramBundle\Services\Loader\Configuration\ConfigurationLoader
+        arguments:
+            - @api_histogram.configuration_builder
+            - "%api_histogram.config%"
+
+    api_histogram.validate:
+        class: ApiHistogram\ApiHistogramBundle\Validators\Validate
+
+    api_histogram.validator_loader:
+        class: ApiHistogram\ApiHistogramBundle\Services\Loader\Validator\ValidatorLoader
+        arguments:
+            - @api_histogram.validate
+
+    api_histogram.cleaner_loader:
+        class: ApiHistogram\ApiHistogramBundle\Services\Loader\Cleaner\CleanerLoader
+        arguments:
+            - @api_histogram.validate
+            - @api_histogram.validator_loader
