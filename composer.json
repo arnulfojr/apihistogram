@@ -1,10 +1,22 @@
 {
-    "name": "arnulfosolis/.checkout",
-    "license": "proprietary",
-    "type": "project",
+    "name": "arnulfosolis/apihistogram",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "homepage": "https://github.com/arnulfojr/apihistogram",
+    "description": "ApiHistogram is a Symphony Bundle that allows you to create historical data from your web services",
+    "minimum-stability": "dev",
+    "version": "1.0",
+    "keywords": ["api", "history", "sql", "doctrine", "histogram", "HTTP", "save", "apihistogram"],
+    "authors": [
+        {
+            "name": "Arnulfo Solis Ramirez",
+            "email": "arnulfojr@kuzzy.com",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "ApiHistogram\\": "ApiHistogram/"
         }
     },
     "require": {
@@ -12,9 +24,6 @@
         "symfony/symfony": "2.7.*",
         "doctrine/orm": "^2.4.8",
         "doctrine/doctrine-bundle": "~1.4",
-        "symfony/assetic-bundle": "~2.3",
-        "symfony/swiftmailer-bundle": "~2.3",
-        "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
