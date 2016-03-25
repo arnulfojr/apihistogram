@@ -11,17 +11,17 @@ your own historical data based on a third party service.
 Installation
 ============
 
-- To use this Standard version, what you need to do first is to clone
-the repository.
-- Then call ```composer install``` or ```composer update``` to get all
-the dependencies set.
+- First add ApiHistogram to your project with composer.
+    + Composer: ```composer require arnulfosolis/apihistogram @dev```
+- Then, if needed, call ```composer install``` or ```composer update```
+to get all the dependencies set.
 - Make sure that the ```ApiHistogramBundle``` is registered in
 the ```AppKernel```.
-- Fill the currency_url from the ```parameters``` file.
-    + I used http://apilayer.net/api/live so the Cleaner given in the
-    config file is design for it.
-    + If you change the web service make sure you define the desired
-    ```CleanerInterface``` instance.
+    + All ApiHistogram Classes lay under:
+        - Namespace: ``` ApiHistogram\ ```.
+- Fill the needed configuration in the your target's ```config.yml```
+file.
+    + See ```README_CONFIG.md``` file under ```/ApiHistogram``` directory
 - Make sure you set your database's configuration in the parameter's
 file.
 - You're done!
