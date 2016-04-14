@@ -24,8 +24,6 @@
         "symfony/symfony": "2.7.*",
         "doctrine/orm": "^2.4.8",
         "doctrine/doctrine-bundle": "~1.4",
-        "sensio/distribution-bundle": "~4.0",
-        "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "guzzlehttp/guzzle": "~5.0"
     },
